@@ -1,0 +1,28 @@
+{
+  "name": "api",
+  "version": "1.0.0",
+  "description": "payment-gateway-paypal-braintree",
+  "main": "source/server.ts",
+  "scripts": {
+    "build": "rm -rf build/ && prettier --write source/ && tsc"
+  },
+  "author": "Arindam Dutta",
+  "license": "ISC",
+  "dependencies": {
+    "@types/morgan": "^1.9.2",
+    "body-parser": "^1.19.0",
+    "braintree": "^3.3.0",
+    "cookie-parser": "^1.4.5",
+    "dotenv": "^8.2.0",
+    "ejs": "^3.1.6",
+    "express": "^4.17.1",
+    "mongoose": "^5.12.3",
+    "paypal-rest-sdk": "^1.8.1"
+  },
+  "devDependencies": {
+    "@types/body-parser": "^1.19.0",
+    "@types/dotenv": "^8.2.0",
+    "@types/express": "^4.17.11",
+    "@types/mongoose": "^5.10.4"
+  }
+}
