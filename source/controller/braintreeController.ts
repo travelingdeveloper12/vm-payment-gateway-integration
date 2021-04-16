@@ -13,7 +13,6 @@ const bthome = (req: Request, res: Response, next: NextFunction) => {
 const btCheckOut = (req: Request, res: Response, next: NextFunction) =>{
   const gateway = new braintree.BraintreeGateway({
     environment: braintree.Environment.Sandbox,
-    // Use your own credentials from the sandbox Control Panel here
     merchantId: braintreeConfig.braintree.merchantId,
     publicKey: braintreeConfig.braintree.publicKey,
     privateKey: braintreeConfig.braintree.privateKey
